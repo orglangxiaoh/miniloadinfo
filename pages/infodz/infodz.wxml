@@ -1,0 +1,61 @@
+<view class="page">
+  <view class="weui-form__text-area">
+    <view class="weui-form__title">贷款申请</view>
+    <view class="weui-form__desc"></view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="您的姓名" />
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">金额</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="所需贷款金额（万元）" />
+      </view>
+    </view>
+    <view class="weui-cell  weui-cell_vcode">
+      <view class="weui-cell__hd">
+        <view class="weui-label">电话</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="联系电话" />
+      </view>
+      <view class="weui-cell__ft">
+        <view class="weui-vcode-btn">获取验证码</view>
+      </view>
+    </view>
+
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <view class="weui-label">验证码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="数字验证码" />
+      </view>
+    </view>
+
+    <checkbox-group bindchange="bindAgreeChange" >
+      <label class="weui-agree" for="weuiAgree">
+        <view class="weui-agree__text">
+          <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+          <view class="weui-agree__checkbox-icon">
+            <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+          </view>
+          阅读并同意
+          <navigator id="nav" catchtap="bindAgreeClick" url="../agreement/agreement" class="weui-agree__link">《相关条款》</navigator>
+        </view>
+      </label>
+    </checkbox-group>
+   
+  </view>
+   <view class="page__bd page__bd_spacing">
+      <button class="weui-btn mybtn" type="primary">提交</button>
+    </view>
+</view>

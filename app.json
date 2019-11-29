@@ -1,0 +1,19 @@
+{
+  "pages": [ 
+    "pages/index/index",
+    "pages/infodz/infodz",
+    "pages/infody/infody",
+    "pages/infoxy/infoxy",
+    "pages/infoqy/infoqy",
+    "pages/logs/logs",
+    "pages/agreement/agreement"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

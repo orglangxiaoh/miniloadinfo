@@ -1,2 +1,2 @@
 # miniloadinfo
-小程序1
+信息录入小程序

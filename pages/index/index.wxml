@@ -1,0 +1,12 @@
+<view class="page">
+   <view class="page__bd">
+        <view class="weui-grids grids-view">
+            <block wx:for="{{grids}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName">
+                <navigator url="{{itemName.url}}" class="buttongrids weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../img/icon_tabbar.png" />
+                    <view class="weui-grid__label">{{itemName.text}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

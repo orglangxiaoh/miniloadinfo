@@ -1,0 +1,12 @@
+.weui-tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.buttongrids{
+  width: 50%;
+}
+.grids-view{
+  margin-top: 300rpx;
+}
