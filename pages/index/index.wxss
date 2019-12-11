@@ -4,9 +4,67 @@
   left: 0;
   right: 0;
 }
-.buttongrids{
-  width: 50%;
+
+.bg{
+  position: relative;
 }
-.grids-view{
-  margin-top: 300rpx;
+
+.bgimage {
+  width: 750rpx;
+  height: 1200rpx;
+  margin-top: 0rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
 }
+
+.mybutton{
+  position: absolute;
+  display: block;
+  top: 440rpx;
+  width: 250rpx;
+  left: 50%;
+  margin-left: -150rpx;
+  letter-spacing: 10rpx;
+  font-weight: bold;
+}
+
+button {
+        display: inline-block;
+        position: relative;
+        padding: 0px 10px;
+        background:black;
+        color: white;
+        line-height: 2.5;
+        margin-left: 1em;
+        border-radius: 0;
+        text-align: center;
+        overflow:inherit;
+    }
+    button:hover {
+        background: gray;
+        color: white;
+    }
+    button:before {
+        position: absolute;
+        content: " ";
+        border: transparent 1.25em solid;
+        border-right-color: black;
+        top: 0;
+        left: -2.5em;
+        height: 0em;
+        width: 0em;
+    }
+    button:hover:before {
+        border-right-color: gray;
+    }
+    button:after {
+        position: absolute;
+        content: " ";
+        background: white;
+        width: 0.7em;
+        height: 0.7em;
+        top: 1.0em;
+        left: -0.125em;
+        border-radius: 0.25em;
+    }

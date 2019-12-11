@@ -1,4 +1,14 @@
 .mybtn{
    margin-top: 50rpx;
+   background-color: gray;
+   font-weight: bold;
 }
+ .topimg{
+        width:750rpx;
+        height: 400rpx;
+        margin-top: 0rpx;       
+    }
 
+  .bgimg{
+    height: 985rpx;
+  }

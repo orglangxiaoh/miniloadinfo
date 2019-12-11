@@ -1,0 +1,26 @@
+.bg{
+  position: relative;
+}
+
+.bgimage {
+  width: 750rpx;
+  height: 1200rpx;
+  margin-top: 0rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.box{
+  position: absolute;
+  top: 400rpx;
+  width: 100%;
+}
+
+.mycell{
+  height: 100rpx;
+  left: 30rpx;
+}
+.mycell2{
+  height: 40rpx;
+}

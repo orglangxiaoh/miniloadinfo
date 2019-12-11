@@ -1,12 +1,12 @@
 <view class="page">
-   <view class="page__bd">
-        <view class="weui-grids grids-view">
-            <block wx:for="{{grids}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName">
-                <navigator url="{{itemName.url}}" class="buttongrids weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../img/icon_tabbar.png" />
-                    <view class="weui-grid__label">{{itemName.text}}</view>
-                </navigator>
-            </block>
-        </view>
-    </view>
+  <view class="page__bd bg">
+    <image class="bgimage" src="../../img/0100home.png" mode="scaleToFill"></image>
+    <view class="box">
+      <button class="mybutton" bindtap="bindRecord">登记表</button>
+      <button class="mybutton" style="top:560rpx" bindtap="bindOnLine">线上贷</button>
+      <button class="mybutton" style="top:685rpx" bindtap="bindCredit">信用贷</button>
+      <button class="mybutton" style="top:810rpx" bindtap="bindHouse">房贷</button>
+      <button class="mybutton" style="top:920rpx" bindtap="bindCompany">企业贷</button>
+    </view>  
+  </view>
 </view>

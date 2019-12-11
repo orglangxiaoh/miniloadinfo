@@ -1,6 +1,7 @@
 //app.js
 App({ 
   globalData: {
-    isAgree: false
+    isAgree: false,
+    sets:{}
   }
 })

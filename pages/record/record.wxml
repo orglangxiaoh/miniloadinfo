@@ -1,24 +1,28 @@
 <view class="page">
-    <view>
-     <image class="topimg" src="{{topimg}}"></image>
-    </view>
+  <view class="page__bd bg">
+    <image class="bgimage" src="../../img/0101record.png" mode="scaleToFill"></image>
+  </view>
+  <view class="box">
     <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell ">
+      <view class="weui-cell weui-cell_select mycell">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">所在城市</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindArray1Change" value="{{index1}}" range="{{array1}}">
+            <view class="weui-select weui-select_in-select-after">{{array1[index1]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell mycell2">
         <view class="weui-cell__hd">
           <view class="weui-label">姓名</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input"  bindblur="bindNameInput" placeholder="您的姓名" />
+          <input class="weui-input" bindblur="bindNameInput" placeholder="您的姓名" />
         </view>
       </view>
-      <view class="weui-cell ">
-        <view class="weui-cell__hd">
-          <view class="weui-label">金额</view>
-        </view>
-        <view class="weui-cell__bd">
-          <input class="weui-input" type="number" bindblur="bindMoneyInput" placeholder="所需贷款金额（万元）" />
-        </view>
-      </view>
+
       <view class="weui-cell  weui-cell_vcode">
         <view class="weui-cell__hd">
           <view class="weui-label">电话</view>
@@ -30,7 +34,6 @@
           <view class="weui-vcode-btn" catchtap="bindGetValidateCode">{{word}}</view>
         </view>
       </view>
-
       <view class="weui-cell">
         <view class="weui-cell__hd">
           <view class="weui-label">验证码</view>
@@ -39,6 +42,25 @@
           <input class="weui-input" type="number" bindblur="bindCodeInput" placeholder="数字验证码" />
         </view>
       </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">客户经理</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindblur="bindCustomerManagerInput" placeholder="客户经理" />
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">拜访日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2030-09-01" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+
 
       <checkbox-group bindchange="bindAgreeChange">
         <label class="weui-agree" for="weuiAgree">
@@ -57,5 +79,5 @@
     <view class="page__bd page__bd_spacing">
       <button class="weui-btn mybtn" bindtap="bindSubmit" type="default">提交</button>
     </view>
-    <image class="bgimg" src="../../img/0106backgroung.png"></image>
   </view>
+</view>

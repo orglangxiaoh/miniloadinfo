@@ -7,26 +7,50 @@ Page({
    * 页面的初始数据
    */
   data: {
-    grids: [
+    infos: [
       {
-        text: '定制贷款',
-        url: '../infodz/infodz'
+        text: '线上贷',
+        url: '../infody/infody',
+        loanType:"online"
       },
       {
-        text: '信用贷款',
-        url: '../infoxy/infoxy'
-      },
-      {
-        text: '抵押贷款',
+        text: '信用贷',
+        loanType: "credit",
         url: '../infody/infody'
       },
       {
-        text: '企业贷款',
-        url: '../infoqy/infoqy'
+        text: '房贷',
+        loanType: "house",
+        url: '../infody/infody'
+      },
+      {
+        text: '企业贷',      
+        loanType: 'company',
+        url: '../infody/infody'
       }
     ]
   },
-
+  bindOnLine:function(e){
+    this.navigateToDetail(0)
+  },
+  bindCredit:function(e){
+    this.navigateToDetail(1)
+  },
+  bindHouse:function(e){
+    this.navigateToDetail(2)
+  },
+  bindCompany:function(e){
+    this.navigateToDetail(3)
+  },
+  navigateToDetail(idx){
+    var info = this.data.infos[idx]
+    wx.navigateTo({
+      url: info.url + "?loantype=" + info.loanType,
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
