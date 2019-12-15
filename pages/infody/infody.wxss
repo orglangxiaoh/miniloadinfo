@@ -10,5 +10,20 @@
     }
 
   .bgimg{
-    height: 985rpx;
+    height: 100%;
+    width: 100%;
+  }
+
+  .content{
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+  }
+
+  .introduce{
+    margin: 50rpx 50rpx 0rpx 50rpx;
+    height: 1000rpx;
+  }
+  .inputTitle{
+    width: 140rpx;
   }

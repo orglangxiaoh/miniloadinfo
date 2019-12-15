@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/record/record",
     "pages/index/index",
-    "pages/infodz/infodz",
     "pages/infody/infody",
+    "pages/record/record",
+   
+    "pages/infodz/infodz",
     "pages/infoxy/infoxy",
     "pages/infoqy/infoqy",
     "pages/logs/logs",
