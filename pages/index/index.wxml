@@ -1,12 +1,34 @@
 <view class="page">
-  <view class="page__bd bg">
-    <image class="bgimage" src="../../img/0101.png" mode="scaleToFill"></image>
-    <view class="box">
-      <button class="mybutton" bindtap="bindRecord">登记表</button>
-      <button class="mybutton right" style="top:630rpx" bindtap="bindOnLine">线上贷</button>
-      <button class="mybutton" style="top:750rpx" bindtap="bindCredit">信用贷</button>
-      <button class="mybutton right" style="top:890rpx" bindtap="bindHouse">房贷</button>
-      <button class="mybutton" style="top:1000rpx" bindtap="bindCompany">企业贷</button>
-    </view>  
+    <view class="page__bd top">
+      <view class="title">国信普惠</view>
+      <view class="subTitle">.普于民 惠于民.</view>
+    </view>
+    <view class="page__bd">
+      <view class="weui-cells__title"></view>
+      <view class="weui-cells weui-cells_after-title">
+        <navigator url="../infody/infody?loantype=online" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">登记表</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+      </view>
+      <view class="weui-cells__title"></view>
+      <view class="weui-cells weui-cells_after-title last">
+        <navigator url="../infody/infody?loantype=online" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">线上贷</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="../infody/infody?loantype=credit" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">信用贷</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="../infody/infody?loantype=company" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">企业贷</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="../infody/infody?loantype=house" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">房贷</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+      </view>
+    </view>
   </view>
-</view>

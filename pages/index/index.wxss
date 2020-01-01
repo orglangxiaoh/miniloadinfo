@@ -1,40 +1,24 @@
-.weui-tabbar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
-.bg{
-  position: relative;
-}
-
-.bgimage {
-  width: 750rpx;
-  height: 1200rpx;
-  margin-top: 0rpx;
-  position: absolute;
-  top: 0rpx;
-  left: 0rpx;
-}
-
-.mybutton{
-  position: absolute;
-  display: block;
-  top: 500rpx;
-  width: 250rpx;
-  left: 130rpx;
-  letter-spacing: 10rpx;
-  font-weight: bold;
-  background: transparent;
+.top{
+  width: 710rpx;
+  height: 350rpx;
+  padding-top:20rpx;
+  margin-left:20rpx;
+  background: rgb(255, 224, 160);
   border: none;
-  color: #9999ff;
-  font-size: 50rpx;
+  border-radius: 20rpx
 }
-.right{
-  left: 370rpx;
-  
+.title{
+  font-size: 150rpx;
+  font-weight: 800;
+  line-height: 200rpx;
+  text-align: center;
 }
-button::after{
-  border: none
+.subTitle{
+  text-align: center;
+  font-weight: 300rpx;
+  font-size: 60rpx;
+}
+.last{
+  height: auto;
 }
