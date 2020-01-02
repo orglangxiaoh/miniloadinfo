@@ -30,6 +30,11 @@ Page({
       }
     ]
   },
+  bindRecord:function(e){
+    wx.navigateTo({
+      url: '../record/record',
+    })
+  },
   bindOnLine:function(e){
     this.navigateToDetail(0)
   },

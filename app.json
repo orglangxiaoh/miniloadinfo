@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/record/record",
     "pages/index/index",
+    "pages/record/record",
+   
     "pages/infodz/infodz",
     "pages/infody/infody",
     "pages/infoxy/infoxy",
