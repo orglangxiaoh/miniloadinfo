@@ -79,5 +79,8 @@
     <view class="page__bd page__bd_spacing">
       <button class="weui-btn mybtn" bindtap="bindSubmit" type="default">提交</button>
     </view>
+    <view>
+    
+    </view>
   </view>
 </view>

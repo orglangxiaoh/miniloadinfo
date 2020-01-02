@@ -2,6 +2,8 @@
 App({ 
   globalData: {
     isAgree: false,
-    sets:{}
+    sets:{},
+    screenWidth: 750,
+    screenHeight: wx.getSystemInfoSync().screenHeight / wx.getSystemInfoSync().screenWidth * 750
   }
 })

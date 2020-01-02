@@ -1,14 +1,30 @@
 .mybtn{
-   margin-top: 50rpx;
+   margin-top: 30rpx;
    background-color: gray;
    font-weight: bold;
 }
  .topimg{
-        width:750rpx;
+        width:710rpx;
         height: 400rpx;
-        margin-top: 0rpx;       
+        margin-top: 0rpx;
+        margin-left: 20rpx;       
     }
-
   .bgimg{
-    height: 985rpx;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .content{
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+  }
+
+  .introduce{
+    margin: 30rpx 20rpx 0rpx 20rpx;
+    height: 1000rpx;
+  }
+  .inputTitle{
+    width: 140rpx;
   }

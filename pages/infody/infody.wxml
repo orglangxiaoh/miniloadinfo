@@ -1,19 +1,20 @@
 <view class="page">
-    <view>
-     <image class="topimg" src="{{topimg}}"></image>
-    </view>
+  <view>
+    <image class="topimg" src="{{topimg}}"></image>
+  </view>
+  <view class="content">
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell ">
         <view class="weui-cell__hd">
-          <view class="weui-label">姓名</view>
+          <view class="weui-label inputTitle">姓名</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input"  bindblur="bindNameInput" placeholder="您的姓名" />
+          <input class="weui-input" bindblur="bindNameInput" placeholder="您的姓名" />
         </view>
       </view>
       <view class="weui-cell ">
         <view class="weui-cell__hd">
-          <view class="weui-label">金额</view>
+          <view class="weui-label inputTitle">金额</view>
         </view>
         <view class="weui-cell__bd">
           <input class="weui-input" type="number" bindblur="bindMoneyInput" placeholder="所需贷款金额（万元）" />
@@ -21,7 +22,7 @@
       </view>
       <view class="weui-cell  weui-cell_vcode">
         <view class="weui-cell__hd">
-          <view class="weui-label">电话</view>
+          <view class="weui-label inputTitle">电话</view>
         </view>
         <view class="weui-cell__bd">
           <input class="weui-input" type="number" bindblur="bindPhoneInput" placeholder="联系电话" />
@@ -33,7 +34,7 @@
 
       <view class="weui-cell">
         <view class="weui-cell__hd">
-          <view class="weui-label">验证码</view>
+          <view class="weui-label inputTitle">验证码</view>
         </view>
         <view class="weui-cell__bd">
           <input class="weui-input" type="number" bindblur="bindCodeInput" placeholder="数字验证码" />
@@ -57,5 +58,9 @@
     <view class="page__bd page__bd_spacing">
       <button class="weui-btn mybtn" bindtap="bindSubmit" type="default">提交</button>
     </view>
-    <image class="bgimg" src="../../img/0106backgroung.png"></image>
   </view>
+<view class="introduce">
+ <image class="bgimg" src="../../img/0106backgroung.png"></image>
+</view>
+ 
+</view>
