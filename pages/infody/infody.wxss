@@ -1,6 +1,6 @@
 .mybtn{
    margin-top: 30rpx;
-   background-color: gray;
+   background-color: #07c160;
    font-weight: bold;
 }
  .topimg{
@@ -23,7 +23,7 @@
 
   .introduce{
     margin: 30rpx 20rpx 0rpx 20rpx;
-    height: 1000rpx;
+    height: 1200rpx;
   }
   .inputTitle{
     width: 140rpx;

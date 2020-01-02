@@ -11,9 +11,9 @@
 }
 
 .box{
-  position: absolute;
-  top: 400rpx;
-  width: 100%;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
 }
 
 .mycell{
@@ -22,4 +22,38 @@
 }
 .mycell2{
   height: 40rpx;
+}
+page{
+  background-color: rgb(248, 246, 243)
+}
+.top{
+  width: 670rpx;
+  margin-left: 20rpx;
+  height: 350rpx;
+  border-radius: 20rpx;
+  border: solid 20rpx rgb(154, 108, 69)
+}
+.title{
+  font-size: 100rpx;
+  font-weight: 800;
+  line-height: 200rpx;
+  text-align: center;
+  font-family: Microsoft Yahei;
+  color: rgb(154, 108, 69);
+}
+.subTitle{
+  text-align: center;
+  font-weight: 500rpx;
+  font-size: 40rpx;
+  font-family: Microsoft Yahei;
+    color: rgb(154, 108, 69);
+}
+.footer{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+.mybtn{
+   margin-top: 30rpx;
+   background-color: #07c160;
+   font-weight: bold;
 }

@@ -9,15 +9,17 @@
   border-radius: 20rpx
 }
 .title{
-  font-size: 150rpx;
+  font-size: 120rpx;
   font-weight: 800;
   line-height: 200rpx;
   text-align: center;
+  color: rgb(93, 64, 55);
 }
 .subTitle{
   text-align: center;
   font-weight: 300rpx;
   font-size: 60rpx;
+  color: rgb(93, 64, 55);
 }
 .last{
   height: auto;
