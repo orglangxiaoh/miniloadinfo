@@ -1,26 +1,10 @@
-const app = getApp();
+// pages/result/result.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isAgree: false
-  },
-  bindAgreeChange: function (e) {
-    this.setData({
-      isAgree: !!e.detail.value.length
-    });
-  },
-  /**
-  * 生命周期函数--监听页面显示
-  */
-  onShow: function () {
-    this.setData({
-      isAgree: app.globalData.isAgree
-    })
-  },
-  bindAgreeClick: function (e) {
 
   },
 
@@ -37,6 +21,14 @@ Page({
   onReady: function () {
 
   },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

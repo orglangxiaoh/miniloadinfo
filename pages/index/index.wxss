@@ -24,3 +24,17 @@
 .last{
   height: auto;
 }
+.bgimg{
+  width: 750rpx;
+  height: 1200rpx;
+}
+.content{
+  position: absolute;
+  width: 550rpx;
+  left: 100rpx;
+  top:480rpx;
+}
+ .introduce{
+    height: 1200rpx;
+    margin-top: -15rpx;
+  }

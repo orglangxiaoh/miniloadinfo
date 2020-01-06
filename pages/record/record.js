@@ -74,16 +74,16 @@ Page({
         flag: false,
         word: t.data.countDownNum + "s"
       })
-      this.sendValidateCode()
+      this.sendValidateCode(t, this.data.phoneNum)
     } else wx.showToast({
       title: "请填写正确的手机号码",
       icon: "none",
       duration: 2e3
     });
   },
-  sendValidateCode: function (phoneNumber) {
+  sendValidateCode: function (t, phoneNumber) {
     wx.request({
-      url: app.globalData.url + "Home/SendMessage",
+      url: app.globalData.url + "/Home/SendMessage",
       data: {
         phone: phoneNumber
       },
@@ -132,22 +132,31 @@ Page({
         icon: "none",
         duration: 2e3
       })
-    } else {
+    }
+    else if (!this.data.isAgree) {
+      wx.showToast({
+        title: "同意《相关条款》后才能提交结果",
+        icon: "none",
+        duration: 2e3
+      })
+    }   
+    else {
       var t = app.globalData.sets
       t.Name = this.data.name
       t.PhoneNumber = this.data.phoneNum
       t.ValidateCode = this.data.validateCode
-      t.RequestAmount = this.data.requestAmount
-      t.LoanType = this.data.loanType
+      t.Region = this.data.array1[this.data.index1]
+      t.VisitTime = this.data.date
+      t.ClientManagerName = this.data.customerManager
       console.log(t)
       wx.request({
-        url: app.globalData.url + '/Home/AddClientInfo',
+        url: app.globalData.url + '/Home/AddVisitInfo',
         data: t,
         method: "post",
         success: function (e) {
-          if (true === e.data.IsSuccess) {
+          if (true === e.data.isSuccess) {
             wx.navigateTo({
-              url: '../result/result?total=' + e.data.Total,
+              url: '../result/result'
             })
           } else {
             wx.showToast({

@@ -5,15 +5,11 @@
 .bgimage {
   width: 750rpx;
   height: 1200rpx;
-  margin-top: 0rpx;
-  position: absolute;
-  top: 0rpx;
 }
 
 .box{
-  margin-top: 50rpx;
-  margin-left: 20rpx;
-  margin-right: 20rpx;
+  position: absolute;
+  top: 400rpx;
 }
 
 .mycell{
@@ -31,7 +27,7 @@ page{
   margin-left: 20rpx;
   height: 350rpx;
   border-radius: 20rpx;
-  border: solid 20rpx rgb(154, 108, 69)
+  border: solid 20rpx rgb(154, 108, 69);
 }
 .title{
   font-size: 100rpx;
@@ -54,6 +50,8 @@ page{
 }
 .mybtn{
    margin-top: 30rpx;
+   margin-left: 20rpx;
+   width: 710rpx;
    background-color: #07c160;
    font-weight: bold;
 }

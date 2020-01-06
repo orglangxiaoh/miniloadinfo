@@ -66,30 +66,37 @@ Page({
         flag: false,
         word: t.data.countDownNum + "s"
       })
-      this.sendValidateCode()
+      this.sendValidateCode(t, this.data.phoneNum)
     } else wx.showToast({
       title: "请填写正确的手机号码",
       icon: "none",
       duration: 2e3
     });
   },
-  sendValidateCode: function(phoneNumber) {
+  sendValidateCode: function(t, phoneNumber) {
     wx.request({
-      url: app.globalData.url + "Home/SendMessage",
+      url: app.globalData.url + "/Home/SendMessage",
       data: {
         phone: phoneNumber
       },
       method: "get",
-      success: function(e) {
-        true === e.data.IsSuccess ? wx.showToast({
-          title: e.data.message,
-          icon: "success",
-          duration: 2e3
-        }) : wx.showToast({
-          title: e.data.message,
-          icon: "none",
-          duration: 2e3
-        }), t.countDown();
+      success: function (e) {      
+        if (true === e.data.isSuccess) {
+          console.log(e.data.isSuccess)
+          wx.showToast({
+            title: e.data.message,
+            icon: "success",
+            duration: 2e3
+          })        
+        }
+        else {
+          wx.showToast({
+            title: e.data.message,
+            icon: "none",
+            duration: 2e3
+          })
+        }
+        t.countDown()
       },
       fail: function(t) {
         wx.showModal({
@@ -123,22 +130,30 @@ Page({
         icon: "none",
         duration: 2e3
       })
-    } else {
+    } 
+    else if (!this.data.isAgree) {
+      wx.showToast({
+        title: "同意《相关条款》后才能提交结果",
+        icon: "none",
+        duration: 2e3
+      })
+    }   
+    else {
       var t = app.globalData.sets
       t.Name = this.data.name
       t.PhoneNumber = this.data.phoneNum
       t.ValidateCode = this.data.validateCode
       t.RequestAmount = this.data.requestAmount
-      t.LoanType = this.data.loanType
+      t.LoanType = this.data.loantype
       console.log(t)
       wx.request({
         url: app.globalData.url + '/Home/AddClientInfo',
         data: t,
         method: "post",
         success: function(e) {
-          if (true === e.data.IsSuccess) {
+          if (true === e.data.isSuccess) {
             wx.navigateTo({
-              url: '../result/result?total=' + e.data.Total,
+              url: '../result/result'
             })
           } else {
             wx.showToast({

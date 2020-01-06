@@ -1,8 +1,11 @@
 <view class="page">
-  <view class="page__bd top">
+<view class="page__bd top">
     <view class="title">-国信普惠-</view>
     <view class="subTitle">低利息-高额度</view>
     <view class="subTitle">专业评估 高效放贷</view>
+  </view>
+ <view class="page_bd">
+    <image class="bgimage" src="../../img/0102.png"/>
   </view>
   <view class="page__bd box">
     <view class="weui-cells weui-cells_after-title">
@@ -84,9 +87,5 @@
     <view>
     
     </view>
-  </view>
-  <view class="page__bd footer">
-    <view class="subTitle">联系电话： 021-12345678</view>
-    <view class="subTitle">地址：成都天府国际金融中心4号楼</view>
   </view>
 </view>

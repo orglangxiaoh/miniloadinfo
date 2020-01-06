@@ -1,13 +1,14 @@
 .mybtn{
    margin-top: 30rpx;
+   margin-left: 20rpx;
+   width: 710rpx;
    background-color: #07c160;
    font-weight: bold;
 }
  .topimg{
-        width:710rpx;
+        width:750rpx;
         height: 400rpx;
-        margin-top: 0rpx;
-        margin-left: 20rpx;       
+        margin-top: 0rpx;  
     }
   .bgimg{
     height: 100%;
@@ -16,9 +17,7 @@
 
 
   .content{
-    margin-top: 20rpx;
-    margin-right: 20rpx;
-    margin-left: 20rpx;
+    margin-top: -10rpx;
   }
 
   .introduce{

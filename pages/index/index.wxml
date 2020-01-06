@@ -1,9 +1,8 @@
 <view class="page">
-    <view class="page__bd top">
-      <view class="title">国信普惠</view>
-      <view class="subTitle">.普于民 惠于民.</view>
-    </view>
     <view class="page__bd">
+      <image class="bgimg" src="../../img/0101.png"/>
+    </view>
+    <view class="page__bd content">
       <view class="weui-cells__title"></view>
       <view class="weui-cells weui-cells_after-title">
         <navigator url="../record/record" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
@@ -31,4 +30,7 @@
         </navigator>
       </view>
     </view>
+    <view class="introduce">
+ <image class="bgimg" src="../../img/0106backgroung.png"></image>
+</view>
   </view>
