@@ -3,13 +3,18 @@
 }
 
 .bgimage {
+  position: absolute;
+  top:200rpx;
   width: 750rpx;
   height: 1200rpx;
+  z-index: -1;
 }
 
 .box{
   position: absolute;
   top: 400rpx;
+  left:20rpx;
+  width: 710rpx;
 }
 
 .mycell{
@@ -20,14 +25,15 @@
   height: 40rpx;
 }
 page{
-  background-color: rgb(248, 246, 243)
+  background-color: #feb33f;
 }
 .top{
   width: 670rpx;
-  margin-left: 20rpx;
   height: 350rpx;
+  margin-left: 20rpx;
   border-radius: 20rpx;
   border: solid 20rpx rgb(154, 108, 69);
+  background-color: #EDEDED;
 }
 .title{
   font-size: 100rpx;
@@ -45,13 +51,15 @@ page{
     color: rgb(154, 108, 69);
 }
 .footer{
-  margin-top: 50rpx;
-  margin-bottom: 50rpx;
+  margin-top: 25rpx;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 32rpx;
+  height: 32rpx;
 }
 .mybtn{
    margin-top: 30rpx;
-   margin-left: 20rpx;
-   width: 710rpx;
+   width: 600rpx;
    background-color: #07c160;
    font-weight: bold;
 }

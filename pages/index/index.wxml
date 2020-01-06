@@ -30,7 +30,4 @@
         </navigator>
       </view>
     </view>
-    <view class="introduce">
- <image class="bgimg" src="../../img/0106backgroung.png"></image>
-</view>
   </view>

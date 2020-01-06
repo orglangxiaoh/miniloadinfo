@@ -30,11 +30,14 @@
 }
 .content{
   position: absolute;
-  width: 550rpx;
-  left: 100rpx;
+  width: 710rpx;
+  left: 20rpx;
   top:480rpx;
 }
  .introduce{
     height: 1200rpx;
     margin-top: -15rpx;
+  }
+  page{
+    background-color: #fee0a2;
   }

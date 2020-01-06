@@ -4,9 +4,6 @@
     <view class="subTitle">低利息-高额度</view>
     <view class="subTitle">专业评估 高效放贷</view>
   </view>
- <view class="page_bd">
-    <image class="bgimage" src="../../img/0102.png"/>
-  </view>
   <view class="page__bd box">
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_select mycell">
@@ -83,9 +80,11 @@
     </view>
     <view class="page__bd page__bd_spacing">
       <button class="mybtn" bindtap="bindSubmit" type="primary">提交</button>
-    </view>
-    <view>
-    
+    </view> 
+    <view >
+      <view class="footer">咨询电话：023-66221818</view> 
+      <view class="footer">公司地址：成都天府国际金融中心</view> 
     </view>
   </view>
+   
 </view>
