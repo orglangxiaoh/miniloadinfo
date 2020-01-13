@@ -82,7 +82,7 @@
       <button class="mybtn" bindtap="bindSubmit" type="primary">提交</button>
     </view> 
     <view >
-      <view class="footer">咨询电话：023-66221818</view> 
+      <view class="footer">咨询电话：028-66221818</view> 
       <view class="footer">公司地址：成都天府国际金融中心</view> 
     </view>
   </view>

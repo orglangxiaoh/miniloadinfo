@@ -13,19 +13,19 @@
       <view class="weui-cells__title"></view>
       <view class="weui-cells weui-cells_after-title last">
         <navigator url="../infody/infody?loantype=online" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">线上贷</view>
+          <view class="weui-cell__bd">线上助贷</view>
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
         <navigator url="../infody/infody?loantype=credit" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">信用贷</view>
+          <view class="weui-cell__bd">信用助贷</view>
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
         <navigator url="../infody/infody?loantype=company" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">企业贷</view>
+          <view class="weui-cell__bd">企业助贷</view>
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
         <navigator url="../infody/infody?loantype=house" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">房贷</view>
+          <view class="weui-cell__bd">房产助贷</view>
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
       </view>
