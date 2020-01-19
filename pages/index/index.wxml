@@ -1,33 +1,52 @@
 <view class="page">
-    <view class="page__bd">
-      <image class="bgimg" src="../../img/0101.png"/>
+  <view class="page__bd">
+    <image class="top" src="../../img/index/home.png" />
+  </view>
+  <view class="page__bd content">
+    <view class="weui-cells weui-cells_after-title my_button">
+      <navigator url="../record/record" class="weui-cell weui-cell_access my_buttoncontent" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../../img/index/record.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd my_buttontitle">登记表</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access my_angle"></view>
+      </navigator>
     </view>
-    <view class="page__bd content">
-      <view class="weui-cells__title"></view>
-      <view class="weui-cells weui-cells_after-title">
-        <navigator url="../record/record" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">登记表</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
-      </view>
-      <view class="weui-cells__title"></view>
-      <view class="weui-cells weui-cells_after-title last">
-        <navigator url="../infody/infody?loantype=online" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">线上助贷</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
-        <navigator url="../infody/infody?loantype=credit" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">信用助贷</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
-        <navigator url="../infody/infody?loantype=company" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">企业助贷</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
-        <navigator url="../infody/infody?loantype=house" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__bd">房产助贷</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </navigator>
-      </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title my_button">
+      <navigator url="../infody/infody?loantype=online" class="weui-cell weui-cell_access my_buttoncontent" hover-class="weui-cell_active">
+      <image src="../../img/index/online.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <view class="weui-cell__bd my_buttontitle">线上助贷</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title my_button">
+      <navigator url="../infody/infody?loantype=credit" class="weui-cell weui-cell_access my_buttoncontent" hover-class="weui-cell_active">
+       <image src="../../img/index/credit.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <view class="weui-cell__bd my_buttontitle">信用助贷</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title my_button">
+      <navigator url="../infody/infody?loantype=company" class="weui-cell weui-cell_access my_buttoncontent" hover-class="weui-cell_active">
+       <image src="../../img/index/company.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <view class="weui-cell__bd my_buttontitle">企业助贷</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title my_button">
+      <navigator url="../infody/infody?loantype=house" class="weui-cell weui-cell_access my_buttoncontent" hover-class="weui-cell_active">
+       <image src="../../img/index/house.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <view class="weui-cell__bd my_buttontitle">房产助贷</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
     </view>
   </view>
+</view>

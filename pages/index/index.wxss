@@ -1,43 +1,40 @@
-
-.top{
-  width: 710rpx;
-  height: 350rpx;
-  padding-top:20rpx;
-  margin-left:20rpx;
-  background: rgb(255, 224, 160);
-  border: none;
-  border-radius: 20rpx
-}
-.title{
-  font-size: 120rpx;
-  font-weight: 800;
-  line-height: 200rpx;
-  text-align: center;
-  color: rgb(93, 64, 55);
-}
-.subTitle{
-  text-align: center;
-  font-weight: 300rpx;
-  font-size: 60rpx;
-  color: rgb(93, 64, 55);
-}
-.last{
-  height: auto;
-}
-.bgimg{
+.top {
   width: 750rpx;
-  height: 1200rpx;
+  height: 306rpx;
 }
-.content{
-  position: absolute;
-  width: 710rpx;
-  left: 20rpx;
-  top:480rpx;
+
+.content {
+  margin-top: -150rpx;
+  width: 750rpx;
 }
- .introduce{
-    height: 1200rpx;
-    margin-top: -15rpx;
-  }
-  page{
-    background-color: #fee0a2;
-  }
+
+.my_button {
+  height: 138rpx;
+  width: 700rpx;
+  border-radius: 20rpx;
+  margin-left: 25rpx;
+}
+
+.my_buttoncontent {
+  margin-top: 0rpx;
+  padding-top: 0rpx;
+  height: 138rpx;
+  line-height: 138rpx;
+}
+
+.my_buttontitle{
+  font-weight: bold;
+  color: rgb(51, 51, 51)
+}
+.weui-cell__ft_in-access:after{
+  border-color:rgb(51, 51, 51);
+}
+page {
+  background-color: rgb(247, 247, 247);
+}
+.weui-cells:after{
+  border: none;
+}
+.weui-cells:before{
+  border: none;
+}

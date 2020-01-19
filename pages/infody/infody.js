@@ -19,11 +19,48 @@ Page({
     topimg: "",
     loantype: "",
     imageUrls: {
-      online:"../../img/0102online.png",
-      credit:"../../img/0103credit.png",
-      house:"../../img/0104house.png",
-      company:"../../img/0105company.png"
-    }
+      online: "../../img/0102online.png",
+      credit: "../../img/0103credit.png",
+      house: "../../img/0104house.png",
+      company: "../../img/0105company.png"
+    },
+    grids: [{
+        img: "../../img/loaninfo/11.png",
+        line1:"高额度",
+        line2:"一次授信",
+        line3:"终身使用"
+      },
+      {
+        img: "../../img/loaninfo/12.png",
+        line1: "低压力",
+        line2: "利息负担小",
+        line3: "资金利用大"
+      },
+      {
+        img: "../../img/loaninfo/13.png",
+        line1: "产品多样",
+        line2: "百家机构合作",
+        line3: "多种方案选择"
+      },
+      {
+        img: "../../img/loaninfo/21.png",
+        line1: "方便快捷",
+        line2: "三步申请 条件宽松",
+        line3: "审核迅速 闪电放款"
+      },
+      {
+        img: "../../img/loaninfo/22.png",
+        line1: "服务至上",
+        line2: "品质服务",
+        line3: "专业一对一无隐形费用"
+      },
+      {
+        img: "../../img/loaninfo/23.png",
+        line1: "诚信合规",
+        line2: "长久品质",
+        line3: "合作均为正规机构"
+      }
+    ]
   },
   bindNameInput: function(e) {
     this.setData({
@@ -80,16 +117,15 @@ Page({
         phone: phoneNumber
       },
       method: "get",
-      success: function (e) {      
+      success: function(e) {
         if (true === e.data.isSuccess) {
           console.log(e.data.isSuccess)
           wx.showToast({
             title: e.data.message,
             icon: "success",
             duration: 2e3
-          })        
-        }
-        else {
+          })
+        } else {
           wx.showToast({
             title: e.data.message,
             icon: "none",
@@ -130,15 +166,13 @@ Page({
         icon: "none",
         duration: 2e3
       })
-    } 
-    else if (!this.data.isAgree) {
+    } else if (!this.data.isAgree) {
       wx.showToast({
         title: "同意《相关条款》后才能提交结果",
         icon: "none",
         duration: 2e3
       })
-    }   
-    else {
+    } else {
       var t = app.globalData.sets
       t.Name = this.data.name
       t.PhoneNumber = this.data.phoneNum
@@ -187,7 +221,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.setData({      
+    this.setData({
       loantype: options.loantype,
       topimg: this.data.imageUrls[options.loantype],
     })

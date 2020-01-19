@@ -1,29 +1,115 @@
-.mybtn{
-   margin-top: 30rpx;
-   margin-left: 20rpx;
-   width: 710rpx;
-   background-color: #07c160;
-   font-weight: bold;
+.mycell{
+  height: 100rpx;
+  left: 30rpx;
+  padding: 0;
 }
- .topimg{
-        width:750rpx;
-        height: 400rpx;
-        margin-top: 0rpx;  
-    }
-  .bgimg{
-    height: 100%;
-    width: 100%;
-  }
+
+page{
+  background-color:rgb(247,247,247);
+}
+.top {
+  width: 700rpx;
+  height: 330rpx;
+  margin-left: 25rpx;
+}
+.box{
+  border-radius: 20rpx;
+  margin-left: 25rpx;
+  width: 700rpx;
+}
+.weui-cell_select .weui-select{
+  font-size: 0.9em;
+}
+.weui-cells:before{
+  border: none;
+}
+.weui-cells:after{
+  border: none;
+}
+.weui-cell_select .weui-cell__bd:after{
+  right: 30px;
+}
+.my_vcode_btn{
+  border: 0.5px solid rgb(168, 57, 27);
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 60rpx;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 10rpx;
+  padding: 10;
+  color: rgb(168, 57, 27);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.weui-cell:before{
+  right: 30px;
+  left: 0;
+}
+.weui-label
+{
+  width: 90px;
+  font-size: 0.9em;
+}
+.weui-input{
+  font-size: 0.9em;
+}
+.weui-agree__text
+{
+  color: rgb(51,51,51);
+}
+.weui-agree__checkbox-icon
+{
+  border: 1px solid rgb(51,51,51)
+}
+.weui-agree__link {
+    color: rgb(168, 57, 27);
+}
+
+.mybtn{
+  width: 525rpx;
+  background-color: rgb(222, 41, 16);
+  height: 90rpx;
+  border-radius: 45rpx;
+  color: white;
+}
+
+.weui-grids{
+border: none;
+background-color: white;
+border-radius: 20rpx;
+width: 700rpx;
+margin-left: 25rpx;
+margin-top: 40rpx;
+}
+.weui-grid{
+  border: none;
+  padding-top: 50rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+.weui-grid__icon{
+  width: 100rpx;
+  height: 100rpx;
+}
+.title1{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.title2{
+  font-size: 22rpx;
+}
+
+.my_footerarea{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
 
 
-  .content{
-    margin-top: -10rpx;
-  }
-
-  .introduce{
-    margin: 30rpx 20rpx 0rpx 20rpx;
-    height: 1200rpx;
-  }
-  .inputTitle{
-    width: 140rpx;
-  }
+.footer{
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 2em;
+  height: 2em;
+  color: rgb(138,138,138);
+}

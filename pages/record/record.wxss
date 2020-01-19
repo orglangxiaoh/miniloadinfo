@@ -1,65 +1,89 @@
-.bg{
-  position: relative;
-}
-
-.bgimage {
-  position: absolute;
-  top:200rpx;
-  width: 750rpx;
-  height: 1200rpx;
-  z-index: -1;
-}
-
-.box{
-  position: absolute;
-  top: 400rpx;
-  left:20rpx;
-  width: 710rpx;
-}
-
 .mycell{
   height: 100rpx;
   left: 30rpx;
+  padding: 0rpx;
 }
-.mycell2{
-  height: 40rpx;
-}
+
 page{
-  background-color: #feb33f;
+  background-color:rgb(247,247,247);
 }
-.top{
-  width: 670rpx;
-  height: 350rpx;
-  margin-left: 20rpx;
+.top {
+  width: 700rpx;
+  height: 330rpx;
+  margin-left: 25rpx;
+}
+.box{
   border-radius: 20rpx;
-  border: solid 20rpx rgb(154, 108, 69);
-  background-color: #EDEDED;
+  margin-left: 25rpx;
+  width: 700rpx;
 }
-.title{
-  font-size: 100rpx;
-  font-weight: 800;
-  line-height: 200rpx;
-  text-align: center;
-  font-family: Microsoft Yahei;
-  color: rgb(154, 108, 69);
+.weui-cell_select .weui-select{
+  font-size: 0.9em;
 }
-.subTitle{
-  text-align: center;
-  font-weight: 500rpx;
-  font-size: 40rpx;
-  font-family: Microsoft Yahei;
-    color: rgb(154, 108, 69);
+.weui-cells:before{
+  border: none;
 }
-.footer{
-  margin-top: 25rpx;
-  font-size: 32rpx;
-  text-align: center;
-  line-height: 32rpx;
-  height: 32rpx;
+.weui-cells:after{
+  border: none;
 }
+.weui-cell_select .weui-cell__bd:after{
+  right: 30px;
+}
+.my_vcode_btn{
+  border: 0.5px solid rgb(168, 57, 27);
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-right: 60rpx;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 10rpx;
+  padding: 10;
+  color: rgb(168, 57, 27);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.weui-cell:before{
+  right: 30px;
+  left: 0;
+}
+.weui-label
+{
+  width: 90px;
+  font-size: 0.9em;
+}
+.weui-input{
+  font-size: 0.9em;
+}
+.weui-agree__text
+{
+  color: rgb(51,51,51);
+}
+.weui-agree__checkbox-icon
+{
+  border: 1px solid rgb(51,51,51)
+}
+.weui-agree__link {
+    color: rgb(168, 57, 27);
+}
+
 .mybtn{
-   margin-top: 30rpx;
-   width: 600rpx;
-   background-color: #07c160;
-   font-weight: bold;
+  width: 525rpx;
+  background-color: rgb(222, 41, 16);
+  height: 90rpx;
+  border-radius: 45rpx;
+  color: white;
+}
+
+.my_footerarea{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+
+.footer{
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 2em;
+  height: 2em;
+  color: rgb(138,138,138);
 }

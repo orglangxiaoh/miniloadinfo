@@ -1,11 +1,9 @@
 <view class="page">
-<view class="page__bd top">
-    <view class="title">-国信普惠-</view>
-    <view class="subTitle">低利息-高额度</view>
-    <view class="subTitle">专业评估 高效放贷</view>
+<view class="page__bd">
+    <image class="top" src="../../img/record/logo.png" />
   </view>
-  <view class="page__bd box">
-    <view class="weui-cells weui-cells_after-title">
+  <view class="page__bd">
+    <view class="weui-cells box">
       <view class="weui-cell weui-cell_select mycell">
         <view class="weui-cell__hd weui-cell__hd_in-select-after">
           <view class="weui-label">所在城市</view>
@@ -16,35 +14,35 @@
           </picker>
         </view>
       </view>
-      <view class="weui-cell mycell2">
+      <view class="weui-cell mycell">
         <view class="weui-cell__hd">
           <view class="weui-label">姓名</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" bindblur="bindNameInput" placeholder="您的姓名" />
+          <input class="weui-input" bindblur="bindNameInput" placeholder="请输入您的姓名" />
         </view>
       </view>
 
-      <view class="weui-cell  weui-cell_vcode">
+      <view class="weui-cell  weui-cell_vcode mycell">
         <view class="weui-cell__hd">
           <view class="weui-label">电话</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" type="number" bindblur="bindPhoneInput" placeholder="联系电话" />
+          <input class="weui-input" type="number" bindblur="bindPhoneInput" placeholder="请输入联系电话" />
         </view>
         <view class="weui-cell__ft">
-          <view class="weui-vcode-btn" catchtap="bindGetValidateCode">{{word}}</view>
+          <view class="weui-vcode-btn my_vcode_btn" catchtap="bindGetValidateCode">{{word}}</view>
         </view>
       </view>
-      <view class="weui-cell">
+      <view class="weui-cell mycell">
         <view class="weui-cell__hd">
           <view class="weui-label">验证码</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" type="number" bindblur="bindCodeInput" placeholder="数字验证码" />
+          <input class="weui-input" type="number" bindblur="bindCodeInput" placeholder="请输入验证码" />
         </view>
       </view>
-      <view class="weui-cell">
+      <view class="weui-cell mycell">
         <view class="weui-cell__hd">
           <view class="weui-label">客户经理</view>
         </view>
@@ -52,7 +50,7 @@
           <input class="weui-input" bindblur="bindCustomerManagerInput" placeholder="客户经理" />
         </view>
       </view>
-      <view class="weui-cell">
+      <view class="weui-cell mycell">
         <view class="weui-cell__hd">
           <view class="weui-label">拜访日期</view>
         </view>
@@ -61,30 +59,30 @@
             <view class="weui-input">{{date}}</view>
           </picker>
         </view>
-      </view>
-
-
-      <checkbox-group bindchange="bindAgreeChange">
+      </view>     
+    </view>
+    <view class="page__bd">
+     <checkbox-group bindchange="bindAgreeChange">
         <label class="weui-agree" for="weuiAgree">
           <view class="weui-agree__text">
             <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
             <view class="weui-agree__checkbox-icon">
               <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
             </view>
-            阅读并同意
-            <navigator catchtap="bindAgreeClick" id="nav" url="../agreement/agreement" class="weui-agree__link">《相关条款》</navigator>
+            我已认真阅读并同意
+            <navigator catchtap="bindAgreeClick" id="nav" url="../agreement/agreement" class="weui-agree__link">《相关条例》</navigator>
           </view>
         </label>
       </checkbox-group>
 
     </view>
-    <view class="page__bd page__bd_spacing">
-      <button class="mybtn" bindtap="bindSubmit" type="primary">提交</button>
+   <view class="weui-btn-area">
+      <button class="mybtn" bindtap="bindSubmit">提交</button>
     </view> 
-    <view >
+  </view>
+    
+    <view class="page__bd my_footerarea">
       <view class="footer">咨询电话：028-66221818</view> 
       <view class="footer">公司地址：成都天府国际金融中心</view> 
     </view>
-  </view>
-   
 </view>
