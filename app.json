@@ -3,10 +3,10 @@
     "pages/index/index",
     "pages/infody/infody",
     "pages/record/record",
-    
+    "pages/result/result",
     "pages/logs/logs",
-    "pages/agreement/agreement",
-   "pages/result/result"
+    "pages/agreement/agreement"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",

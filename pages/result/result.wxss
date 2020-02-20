@@ -1,1 +1,17 @@
 /* pages/result/result.wxss */
+page{
+  background-color:rgb(247,247,247);
+}
+.my_footerarea{
+  margin-top: 300rpx;
+}
+
+.footer{
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 2em;
+  height: 2em;
+  color: rgb(138,138,138);
+}

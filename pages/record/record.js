@@ -88,6 +88,9 @@ Page({
         phone: phoneNumber
       },
       method: "get",
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      }, 
       success: function (e) {
         true === e.data.IsSuccess ? wx.showToast({
           title: e.data.message,

@@ -19,7 +19,7 @@
           <view class="weui-label">姓名</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" bindblur="bindNameInput" placeholder="请输入您的姓名" />
+          <input class="weui-input" bindinput="bindNameInput" placeholder="请输入您的姓名" />
         </view>
       </view>
 
@@ -28,7 +28,7 @@
           <view class="weui-label">电话</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" type="number" bindblur="bindPhoneInput" placeholder="请输入联系电话" />
+          <input class="weui-input" type="number" bindinput="bindPhoneInput" placeholder="请输入联系电话" />
         </view>
         <view class="weui-cell__ft">
           <view class="weui-vcode-btn my_vcode_btn" catchtap="bindGetValidateCode">{{word}}</view>
@@ -39,7 +39,7 @@
           <view class="weui-label">验证码</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" type="number" bindblur="bindCodeInput" placeholder="请输入验证码" />
+          <input class="weui-input" type="number" bindinput="bindCodeInput" placeholder="请输入验证码" />
         </view>
       </view>
       <view class="weui-cell mycell">
@@ -47,7 +47,7 @@
           <view class="weui-label">客户经理</view>
         </view>
         <view class="weui-cell__bd">
-          <input class="weui-input" bindblur="bindCustomerManagerInput" placeholder="客户经理" />
+          <input class="weui-input" bindinput="bindCustomerManagerInput" placeholder="客户经理" />
         </view>
       </view>
       <view class="weui-cell mycell">

@@ -116,8 +116,12 @@ Page({
       data: {
         phone: phoneNumber
       },
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      }, 
       method: "get",
       success: function(e) {
+        console.log(e.data)
         if (true === e.data.isSuccess) {
           console.log(e.data.isSuccess)
           wx.showToast({
@@ -179,7 +183,6 @@ Page({
       t.ValidateCode = this.data.validateCode
       t.RequestAmount = this.data.requestAmount
       t.LoanType = this.data.loantype
-      console.log(t)
       wx.request({
         url: app.globalData.url + '/Home/AddClientInfo',
         data: t,

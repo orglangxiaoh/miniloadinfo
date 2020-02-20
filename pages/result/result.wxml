@@ -1,5 +1,6 @@
 <!--pages/result/result.wxml-->
 <view class="page">
-<text>你的信息已提交成功，我们会尽快与您联系！</text>
-
+ <view class="page__bd my_footerarea">
+      <view class="footer">你的信息已提交成功，我们会尽快与您联系！</view> 
+    </view>
 </view>
